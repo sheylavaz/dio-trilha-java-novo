@@ -1,6 +1,9 @@
 /**
- * 
+ * Projeto: ContaBanco
+ * Autor: Sheyla Vaz
+ * Data de criação: 03/09/2025
  */
+
 package br.entities;
 
 import java.util.Objects;
@@ -10,16 +13,27 @@ import java.util.Objects;
  */
 public class ContaCorrente {
 
-	private int numeroCc;
+	private Integer numeroCc;
 	private String agencia;
 	private String nomeCliente;
-	private double saldo;
+	private Double saldo;
 	
-	public int getNumeroCc() {
+	public ContaCorrente() {
+		//construtor padrão
+	}
+
+	public ContaCorrente(int numeroCc, String agencia, String nomeCliente, double saldo) {
+		this.numeroCc = numeroCc;
+		this.agencia = agencia;
+		this.nomeCliente = nomeCliente;
+		this.saldo = saldo;
+	}
+	
+	public Integer getNumeroCc() {
 		return numeroCc;
 	}
 
-	public void setNumeroCc(int numeroCc) {
+	public void setNumeroCc(Integer numeroCc) {
 		this.numeroCc = numeroCc;
 	}
 
@@ -39,11 +53,11 @@ public class ContaCorrente {
 		this.nomeCliente = nomeCliente;
 	}
 
-	public double getSaldo() {
+	public Double getSaldo() {
 		return saldo;
 	}
 
-	public void setSaldo(double saldo) {
+	public void setSaldo(Double saldo) {
 		this.saldo = saldo;
 	}
 

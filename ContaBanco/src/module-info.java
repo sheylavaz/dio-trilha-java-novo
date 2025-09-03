@@ -1,8 +1,5 @@
 /**
  * 
  */
-/**
- * 
- */
 module ContaBanco {
 }

@@ -1,6 +1,9 @@
 /**
- * @author sheyl
+ * Projeto: ContaBanco
+ * Autor: Sheyla Vaz
+ * Data de criação: 03/09/2025
  */
+
 package br;
 
 import java.util.Locale;
@@ -30,7 +33,7 @@ public class ContaTerminal {
 		String agencia;
 		String nomeCliente;
 		Double saldo = null;
-		
+
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		try(sc){
