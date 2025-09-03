@@ -46,7 +46,12 @@ public class ContaTerminal {
 			numeroCc = sc.nextInt();
 			System.out.println("Digita o valor de deposito: ");
 			saldo = sc.nextDouble();
-			System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo %.2f já está disponível para saque.\n", nomeCliente, agencia, numeroCc, saldo);
+			String textoParte1 = "Olá %s, obrigado por criar uma conta em nosso banco, sua agência é ";
+			String textoParte2 = "%s, conta %s e seu saldo %.2f já está ";
+			String textoParte3 = "disponível para saque.\n";
+			
+			System.out.printf((textoParte1.concat(textoParte2).concat(textoParte3)), nomeCliente, agencia, numeroCc, saldo);
+			//System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo %.2f já está disponível para saque.\n", nomeCliente, agencia, numeroCc, saldo);
 		
 		} catch (Exception e) {
 			if(numeroCc == null) {
